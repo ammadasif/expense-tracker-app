@@ -7,16 +7,20 @@ import { TransactionList } from "./components/TransactionList";
 import { AddTransaction } from "./components/AddTransaction";
 
 import { GlobalProvider } from "./context/GlobalState";
+import { Footer } from "./components/Footer";
 function App() {
   return (
     <GlobalProvider>
-      <Header />
+      
       <div className="container">
+        <Header />
         <Balance />
         <IncomeExpense />
         <TransactionList />
         <AddTransaction />
+      <Footer/>
       </div>
+      
     </GlobalProvider>
   );
 }

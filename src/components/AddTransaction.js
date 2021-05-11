@@ -18,7 +18,7 @@ export const AddTransaction = () => {
     } else {
       addTransaction(newTransaction);
       setDesc("");
-      setAmount(0);
+      setAmount('');
     }
   };
 
